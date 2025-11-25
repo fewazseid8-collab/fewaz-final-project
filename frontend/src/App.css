@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.page {
+  animation: fadeInUp 360ms ease both;
+}
+button {
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+table tr {
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+table tr:hover {
+  background-color: rgba(0,0,0,0.02);
+  transform: translateY(-2px);
+}
+input, select {
+  transition: box-shadow 160ms ease, border-color 160ms ease;
+}
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  outline: none;
+}
+.nav-logo {
+  height: 1.05em;
+  width: auto;
+  margin-right: 12px;
+  border-radius: 0;
+  vertical-align: middle;
+  display: inline-block;
+  transition: transform 220ms ease;
+}
+.nav-logo:hover { transform: rotate(-6deg) scale(1.02); }
