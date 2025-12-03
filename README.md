@@ -1,4 +1,4 @@
-**Fewaz Final Project — Pharmaceutical Inventory Management**
+Fewaz Final Project — Pharmaceutical Inventory Management
 
 This repository contains a full-stack application for managing a pharmacy inventory, including products, suppliers, sales and user authentication.
 
