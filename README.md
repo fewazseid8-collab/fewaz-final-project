@@ -1,8 +1,42 @@
-Fewaz Final Project — Pharmaceutical Inventory Management
+# Fewaz Final Project — Pharmaceutical Inventory Management
 
 This repository contains a full-stack application for managing a pharmacy inventory, including products, suppliers, sales and user authentication.
+Full‑stack application
+Has both a frontend (user interface) and a backend (API + business logic).
+Frontend: React app that calls the API and shows pages for products, suppliers and sales.
+Backend: Node + Express that implements REST endpoints, validation, and persistence.
+Managing a pharmacy inventory — primary features
 
-Deployed Applications
+Products: create, read, update, delete product records (name, price, stock, etc.).
+Suppliers: manage supplier contact/info and link supplies to products.
+Sales: record sales transactions, decrement stock, and produce simple reports.
+User authentication and authorization.
+
+Users must log in to perform protected actions.
+Backend issues JWTs on login; protected endpoints require Authorization: Bearer <token>.
+Typical roles: admin (full access) and staff (limited access).
+Persistence and API docs
+
+Data stored in MongoDB (Mongoose models).
+Swagger (OpenAPI) exposes interactive API docs at /api-docs to explore and test endpoints.
+How this maps to the repository
+
+frontend/: React source, UI components and API client.
+backend/: Express routes, controllers, models, middleware (auth, error handling), swagger config.
+.env (local only): connection strings and secrets (MONGODB_URI, JWT_SECRET, SWAGGER_SERVER_URL).
+How to demonstrate start→end (useful for grading)
+
+Start backend and frontend (or use deployed URLs).
+Register or use the test accounts (for admin test: username= admin
+                                                   password= admin or 
+                                   for staff test: username= staff
+                                                   password= staff).
+Log in and obtain JWT.
+Use the frontend or curl/Swagger to create a product, add a supplier, record a sale, and view inventory change.
+Show protected endpoints rejecting requests without a token
+
+
+# Deployed Applications
 - Backend (API): https://final-project-q0vi.onrender.com/
 - Frontend (Client): https://fewaz-pharmaceutical.vercel.app/
 - API Documentation (Swagger UI): https://final-project-q0vi.onrender.com/api-docs/
@@ -23,19 +57,19 @@ deployment setup
 terminal:
 cd backend
 npm install
-# create a .env file or set environment variables:
-# MONGODB_URI, JWT_SECRET, PORT (optional), SWAGGER_SERVER_URL (optional)
+  create a .env file or set environment variables:
+  MONGODB_URI, JWT_SECRET, PORT (optional), SWAGGER_SERVER_URL (optional)
 npm start
 
 
-The backend listens on PORT (default `4321`). The Swagger UI is served at `/api-docs` ( `http://localhost:4321/api-docs`).
+The backend listens on PORT (default `4321`). The Swagger UI is served at `/api-docs` ( e.g`http://localhost:4321/api-docs`).
 
 2) Frontend (development)
 
 cd frontend
 npm install
-# set REACT_APP_API_URL to point to the backend, for example:
-# REACT_APP_API_URL=https://final-2-h6wp.onrender.com/api
+  set REACT_APP_API_URL to point to the backend, for example:
+  REACT_APP_API_URL=https://final-2-h6wp.onrender.com/api
 npm start
 
 Useful endpoints (for testing)
