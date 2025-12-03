@@ -8,7 +8,7 @@ const options = {
       version: '1.0.0',
       description: 'API documentation for the pharmaceutical inventory backend'
     },
-    servers: [{ url: process.env.SWAGGER_SERVER_URL || 'http://localhost:4321' }],
+    servers: [{ url: process.env.SWAGGER_SERVER_URL || 'https://final-project-q0vi.onrender.com/api' }],
   },
   apis: ['./controllers/*.js', './models/*.js'],
 };
