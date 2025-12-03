@@ -8,7 +8,7 @@ Backend: Node + Express that implements REST endpoints, validation, and persiste
 Managing a pharmacy inventory — primary features
 
 Products: create, read, update, delete product records (name, price, stock, etc.).
-Suppliers: manage supplier contact/info and link supplies to products.
+Suppliers: manage supplier contact and tin number supplies to products.
 Sales: record sales transactions, decrement stock, and produce simple reports.
 User authentication and authorization.
 
