@@ -3,9 +3,9 @@ Fewaz Final Project — Pharmaceutical Inventory Management
 This repository contains a full-stack application for managing a pharmacy inventory, including products, suppliers, sales and user authentication.
 
 Deployed Applications
-- Backend (API): https://final-2-h6wp.onrender.com
-- Frontend (Client): https://final-5-two.vercel.app/
-- API Documentation (Swagger UI): https://final-2-h6wp.onrender.com/api-docs
+- Backend (API): https://final-project-q0vi.onrender.com/
+- Frontend (Client): https://fewaz-pharmaceutical.vercel.app/
+- API Documentation (Swagger UI): https://final-project-q0vi.onrender.com/api-docs/
 
 Overview
 - Backend: Node.js, Express, Mongoose (MongoDB), JWT-based authentication, Swagger (OpenAPI) for API documentation.
