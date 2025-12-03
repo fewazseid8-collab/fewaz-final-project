@@ -37,8 +37,8 @@ Show protected endpoints rejecting requests without a token
 
 
 # Deployed Applications
-- Backend (API): https://final-project-q0vi.onrender.com/
 - Frontend (Client): https://fewaz-pharmaceutical.vercel.app/
+- Backend (API): https://final-project-q0vi.onrender.com/
 - API Documentation (Swagger UI): https://final-project-q0vi.onrender.com/api-docs/
 
 Overview
@@ -62,7 +62,7 @@ npm install
 npm start
 
 
-The backend listens on PORT (default `4321`). The Swagger UI is served at `/api-docs` ( e.g`http://localhost:4321/api-docs`).
+The backend listens on PORT (default `4321`). The Swagger UI is served at `/api-docs`.
 
 2) Frontend (development)
 
@@ -83,16 +83,7 @@ Useful endpoints (for testing)
 - POST /api/users/register, POST /api/users/login
 
 For full API details, use the Swagger UI: `/api-docs` on the backend host.
-
-Deployment notes
-- The backend is deployed to Render at `https://final-2-h6wp.onrender.com`.
-- The frontend is deployed to Vercel at `https://final-3-two.vercel.app/` and should set `REACT_APP_API_URL` to the backend API root (e.g. `https://final-2-h6wp.onrender.com/api`).
-- Ensure production environment variables are configured in Render and Vercel (MongoDB connection string and `JWT_SECRET`).
-
-Security and secrets
-- Do not commit secrets to version control. Use environment variable configuration on your hosting provider.
-
-Files of interest
+# Files of interest
 - Backend entry: backend/server.js
 - Swagger config: backend/swagger.js (registers `/api-docs`)
 - Routes: backend/routes/*.js
